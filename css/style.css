@@ -13,41 +13,76 @@ body {
 /* HEADER */
 
 header {
-    padding: 40px 0;
-    width: 80%;
+    padding: 60px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aquamarine;
+    position: fixed;
+}
+
+header .header__content {
+    width: 85%;
     margin: auto;
-    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
 }
 
-header .header__left {
-    display: flex;
-    align-items: center;
+
+@keyframes nav {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 90vh;
+    }
 }
 
-header .header__left .logo img{
-    width: 100px;
-    margin-right: 100px;
+@keyframes grow {
+    0% {}
+
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(2);
+    }
 }
 
-header .header__left nav i {
-    margin-right: 20px;
-}
-
-header .header__left nav p {
-    display: inline-block;
-}
-
-header .header__right {
-    display: flex;
-    align-items: center;
-}
-
-header .header__right > i {
-    margin-left: 20px;
-}
-
-header .header__right .eng p {
-    display: inline-block;
+@keyframes music-bar {
+    0% {
+        height: 6px;
+    }    
+    10% {
+        height: 10px;
+    }
+    20% {
+        height: 6px;
+    }
+    30% {
+        height: 14px;
+    }
+    40% {
+        height: 18px;
+    }
+    50% {
+        height: 6px;
+    }
+    60% {
+        height: 16px;
+    }
+    70% {
+        height: 10px;
+    }
+    80% {
+        height: 12px;
+    }
+    90% {
+        height: 4px;
+    }
+    100% {
+        height: 18px;
+    }
 }
