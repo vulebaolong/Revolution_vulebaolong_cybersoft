@@ -8,7 +8,6 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: #535353;
-    margin-top: 142px;
 }
 
 /* HEADER */
@@ -20,9 +19,10 @@ header {
     right: 0;
     /* background-color: aquamarine; */
     position: fixed;
+    z-index: 1;
 }
 header .header__content {
-    width: 85%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -170,7 +170,7 @@ header .wave span:nth-of-type(4) {
 .header__navTopup .navTopup__container {
     height: 100%;
     padding: 0 50px 0 200px;
-    padding: 60px 100px 0px 300px;
+    padding: 60px 100px 0px 470px;
 }
 .header__navTopup .navTopup__container hr {
     border: none;
@@ -308,6 +308,54 @@ header .wave span:nth-of-type(4) {
     opacity: 1;
     visibility: visible;
     transition-delay: 1.1s;
+}
+
+/* BANNER */
+.banner {
+    background-image: url(../img/circle.png);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 166px 260px 280px;
+}
+
+.banner .banner__info {
+    width: 25%;
+    padding: 82px 0 0 0;
+}
+
+.banner .banner__info h1 {
+    letter-spacing: -0.03em;
+    font-size: 75px;
+    line-height: 1;
+    color: #343434;
+    margin-bottom: 70px;
+}
+
+.banner .banner__info p {
+    margin-bottom: 50px;
+}
+
+.banner .banner__img {
+    position: relative;
+}
+.banner .banner__img img:nth-of-type(1) {
+    position: absolute;
+    width: 358px;
+    height: 546px;
+
+    top: 0;
+    right: 480px;
+}
+.banner .banner__img img:nth-of-type(2) {
+    position: absolute;
+    width: 334px;
+    height: 487px;
+
+    top: 140px;
+    right: 150px;
 }
 
 

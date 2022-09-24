@@ -12,6 +12,10 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- WOW ANIMATION -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" /> -->
+    <link rel="stylesheet" href="./css/animate/animate.min.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -70,7 +74,7 @@
                         <li><a href="#">Who We Are</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Contact Us</a></li>
-                    </ul>                  
+                    </ul>
                 </div>
                 <hr>
                 <div class="navTopup__footer">
@@ -89,7 +93,40 @@
         </div>
     </header>
 
-    
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner__info">
+            <h1>Paulaner <br>Bräuhäuser</h1>
+            <p>An in-depth look at the process behind one of the most successful application ever created on iOS
+                AppStore from our developer team.</p>
+            <a href="#">DISCOVER</a>
+        </div>
+        <div class="banner__img">
+            <img src="./img/iphone-1.png" alt="iphone 1">
+            <img src="./img/iphone-2.png" alt="iphone 2">
+        </div>
+    </section>
+
+    <div>
+        <div>
+            <img src="./img/iphone-1.png" alt="iphone 1" class="wow bounceInUp">
+            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
+        </div>
+        <div>
+            <img src="./img/iphone-1.png" alt="iphone 1" class="wow animate__bounce">
+            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
+        </div>
+        <div>
+            <img src="./img/iphone-1.png" alt="iphone 1" class="wow animate__bounce">
+            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
+        </div>
+    </div>
+
+
+    <script src="./js/wow.min.js"> </script>
+    <script>
+        new WOW().init();
+    </script>
     <!-- MAIN JS -->
     <script src="./js/java.js"></script>
     <script>
