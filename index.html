@@ -13,8 +13,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- WOW ANIMATION -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" /> -->
     <link rel="stylesheet" href="./css/animate/animate.min.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -26,8 +29,8 @@
         <div class="header__content">
             <div class="header__left">
                 <div class="logo">
-                    <img class="logo_black " src="./img/logo_black.png" alt="logo black">
-                    <img class="logo_white " src="./img/logo_white.png" alt="logo white">
+                    <img class="logo_black" src="./img/logo_black.png" alt="logo black">
+                    <img class="logo_white" src="./img/logo_white.png" alt="logo white">
                 </div>
                 <nav class="header__nav">
                     <i class="fa-solid fa-bars"></i>
@@ -95,38 +98,185 @@
 
     <!-- BANNER -->
     <section class="banner">
-        <div class="banner__info">
-            <h1>Paulaner <br>Bräuhäuser</h1>
-            <p>An in-depth look at the process behind one of the most successful application ever created on iOS
-                AppStore from our developer team.</p>
-            <a href="#">DISCOVER</a>
+        <div class="banner__container">
+            <div class="banner__info">
+                <h1>Paulaner <br>Bräuhäuser</h1>
+                <p>An in-depth look at the process behind one of the most successful application ever created on iOS
+                    AppStore from our developer team.</p>
+                <a href="#">DISCOVER</a>
+            </div>
+            <div class="banner__img">
+                <img class="wow animate__animated animate__fadeInTopLeft" src="./img/iphone-1.png" alt="iphone 1">
+                <img class="wow animate__animated animate__fadeInBottomRight" src="./img/iphone-2.png" alt="iphone 2">
+            </div>
         </div>
-        <div class="banner__img">
-            <img src="./img/iphone-1.png" alt="iphone 1">
-            <img src="./img/iphone-2.png" alt="iphone 2">
+
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="product">
+        <div class="product__container">
+            <p class="p__title">SELECTED WORKS</p>
+            <h2 class="h2__1">Revolution is a global network of talent that’s changing the way creatives and companies
+                <span>connect</span> and <span>collaborate</span>.
+            </h2>
+            <div class="product__content">
+                <div class="product__item">
+                    <img src="./img/p1-760x700.jpeg" alt="p1">
+                    <div class="product__info">
+                        <h3>Mobile Apps</h3>
+                        <h4>Spotify</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./img/p2-760x700.jpeg" alt="p2">
+                    <div class="product__info">
+                        <h3>Branding</h3>
+                        <h4>Tokyo Street</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./img/p3-760x700.jpeg" alt="p3">
+                    <div class="product__info">
+                        <h3>Animation</h3>
+                        <h4>Bronze Age</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./img/p4-760x700.jpeg" alt="p4">
+                    <div class="product__info">
+                        <h3>Website Design</h3>
+                        <h4>Centre Pavilion</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./img/p5-760x700.jpeg" alt="p5">
+                    <div class="product__info">
+                        <h3>IIlustration</h3>
+                        <h4>St.Homard</h4>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <img src="./img/btc-760x700.jpeg" alt="btc">
+                    <div class="product__info">
+                        <h3>Branding</h3>
+                        <h4>Vintage Cars</h4>
+                    </div>
+                </div>
+            </div>
+            <p><a href="#">Load More</a></p>
+        </div>
+        <hr>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="service">
+        <div class="service__container">
+            <p class="p__title">OUR SERVICES</p>
+            <h2 class="h2__1">We are bombarded with information, we strip back the unnecessary to deliver simple
+                <span>experiences</span>.
+            </h2>
+
+        </div>
+        <div class="service__content">
+            <div class="service__item">
+                <img src="./img/s1-1-768x780.jpeg" alt="s1">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s2_.jpeg" alt="s2">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s3-771x1024.jpeg" alt="s3">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s4-1.jpeg" alt="s4">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s5-877x1024.jpeg" alt="s5">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s6-877x1024.jpeg" alt="s6">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="service__item">
+                <img src="./img/s7-877x1024.jpeg" alt="s7">
+                <div>
+                    <p>01</p>
+                    <h3>Content Strategy</h3>
+                </div>
+                <button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
     </section>
 
-    <div>
-        <div>
-            <img src="./img/iphone-1.png" alt="iphone 1" class="wow bounceInUp">
-            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
-        </div>
-        <div>
-            <img src="./img/iphone-1.png" alt="iphone 1" class="wow animate__bounce">
-            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
-        </div>
-        <div>
-            <img src="./img/iphone-1.png" alt="iphone 1" class="wow animate__bounce">
-            <img src="./img/iphone-2.png" alt="iphone 2" class="wow bounceInUp">
-        </div>
-    </div>
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+    <!-- WOW JS -->
     <script src="./js/wow.min.js"> </script>
     <script>
         new WOW().init();
     </script>
+
+    <!-- SLICK -->
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.service__content').slick({
+                // infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: true,
+                infinite: false
+            });
+        });
+    </script>
+
     <!-- MAIN JS -->
     <script src="./js/java.js"></script>
     <script>
