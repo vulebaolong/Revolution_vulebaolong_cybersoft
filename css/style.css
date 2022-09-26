@@ -468,10 +468,12 @@ header .wave span:nth-of-type(4) {
 .product .product__container p:nth-of-type(2) {
     padding: 80px 0;
     text-align: center;
+    margin: auto;
 }
 .product .product__container p:nth-of-type(2) a {
     text-decoration: none;
     color: #535353;
+    transition: all .5s;
 }
 .product .product__container p:nth-of-type(2) a:hover {
     color: #c84a24;
@@ -488,15 +490,10 @@ header .wave span:nth-of-type(4) {
     width: 100%;
     gap: 50px;
 }
-
 .product .product__content .product__item {
     position: relative;
 }
 
-.product .product__item img {
-    width: 100%;
-    height: 100%;
-}
 
 .product .product__info {
     position: absolute;
@@ -504,12 +501,10 @@ header .wave span:nth-of-type(4) {
     left: 50px;
     color: white;
 }
-
 .product .product__info h3 {
     font-weight: lighter;
     font-size: 16px;
 }
-
 .product .product__info h4 {
     font-size: 30px;
 }
@@ -517,7 +512,10 @@ header .wave span:nth-of-type(4) {
 .product .product__item {
     transition: all .2s;
 }
-
+.product .product__item img {
+    width: 100%;
+    height: 100%;
+}
 .product .product__item:hover {
     transform: scale(1.05);
     opacity: 0.8;
@@ -580,16 +578,13 @@ header .wave span:nth-of-type(4) {
     width: 80%;
     margin: auto;
 }
-
 .service .service__container > p {
     padding: 80px 0;
 }
-
 .service .service__container h2 {
     width: 50%;
     margin-bottom: 80px;
 }
-
 .service .service__container h2 span {
     color: #ef9982;
 }
@@ -605,33 +600,229 @@ header .wave span:nth-of-type(4) {
     height: 50vh;
     cursor: pointer;
     margin-right: 3px;
+    transition: all 0.2s;
 }
-
 .service .service__item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .service .service__item div {
     position: absolute;
     top: 50px;
     left: 50px;
+    color: white;
+}
+.service .service__item div h3 {
+    font-size: 28px;
+}
+.service .service__item div p {
+    font-size: 12px;
+    font-weight: 600;
+}
+.service .service__item button{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.service .service__item button i {
+    color: white;
+    font-size: 20px;
+}
+.service .service__item:hover {
+    opacity: 0.8;
+}
+
+.service .service__item:nth-of-type(1):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #24c1c8, #0737e6);
+    opacity: 0.9;
+} 
+.service .service__item:nth-of-type(2):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #243dc8, #ab07e6);
+    opacity: 0.9;
+} 
+.service .service__item:nth-of-type(3):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #6324c8, #ae07e6);
+    opacity: 0.9;
+} 
+.service .service__item:nth-of-type(4):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #c82494, #e6073b);
+    opacity: 0.9;
+}
+.service .service__item:nth-of-type(5):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #c82424, #e6b607);
+    opacity: 0.9;
+} 
+.service .service__item:nth-of-type(6):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #50c824, #07e689);
+    opacity: 0.9;
+} 
+.service .service__item:nth-of-type(7):hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #24c89f, #071de6);
+    opacity: 0.9;
+} 
+
+.service .service__item button i:nth-of-type(1){
+    transition: all .5s;
+    transition-delay: .15s;
+}
+.service .service__item button i:nth-of-type(2) {
+    position: absolute;
+    right: 100%;
+    transform: translateX(100%);
+    color: black;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    transition-delay: 0s;
+}
+.service .service__item:hover button i:nth-of-type(2) {
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+.service .service__item:hover button i:nth-of-type(1) {
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
+}
+.service .service__item:hover button {
+    background-color: white;
 }
 
 .service__content ul {
     margin: 20px 0;
 }
-
 .service__content .slick-dots li button{
     margin: 0;
     width: 11px;
     height: 11px;
 }
-
 .service__content .slick-dots li button:before {
     font-size: 20px;
 }
+
+/* INTRODUCE */
+.introduce .introduce__content {
+    width: 80%;
+    margin: auto;
+}
+.introduce .introduce__content p:nth-of-type(1) {
+    color: #343434;
+    padding-top: 80px;
+}
+.introduce .introduce__content h2 {
+    padding: 50px 0;
+    width: 50%;
+}
+.introduce .introduce__content p:nth-of-type(2) {
+    width: 50%;
+    font-size: 18px;
+    word-spacing: 0.001em;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+.introduce .introduce__content h2 span{
+    color: #ef9982;
+}
+.introduce .introduce__content button {
+    background-color: white;
+    border: none;
+    margin-bottom: 80px;
+    position: relative;
+}
+.introduce .introduce__content button a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 16px;
+    transition: all .2s;
+}
+.introduce .introduce__content button i {
+    transition: all 0.2s;
+    transform: translateX(-8px);
+}
+.introduce .introduce__content button span {
+    position: absolute;
+    font-size: 18px;
+    right: 10px;
+    top: -0.01rem;
+    color: black;
+    transition: all .2s;
+}
+.introduce .introduce__content button:hover i {
+    color: #ef9982;
+    transform: translateX(0);    
+}
+.introduce .introduce__content button:hover span,
+.introduce .introduce__content button:hover a {
+    color: #ef9982;
+}
+
+.introduce .introduce__img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2px;
+    margin: 50px 0;
+}
+.introduce .introduce__img img {
+    width: 100%;
+    height: 100%;
+}
+.introduce .introduce__img .introduce_item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    
+}
+
 
 
 
