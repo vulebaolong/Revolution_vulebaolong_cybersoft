@@ -784,24 +784,20 @@ header .wave span:nth-of-type(4) {
     margin-right: 16px;
     transition: all .2s;
 }
-.introduce .introduce__content button i {
+.introduce .introduce__content button i,
+.team button i {
     transition: all 0.2s;
     transform: translateX(-8px);
 }
-.introduce .introduce__content button span {
-    position: absolute;
-    font-size: 18px;
-    right: 10px;
-    top: -0.01rem;
-    color: black;
-    transition: all .2s;
-}
-.introduce .introduce__content button:hover i {
+.introduce .introduce__content button:hover i,
+.team button a:hover + i {
     color: #ef9982;
     transform: translateX(0);    
 }
-.introduce .introduce__content button:hover span,
-.introduce .introduce__content button:hover a {
+
+.introduce .introduce__content button:hover a,
+.team button a:hover
+{
     color: #ef9982;
 }
 
@@ -811,7 +807,7 @@ header .wave span:nth-of-type(4) {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 2px;
-    margin: 50px 0;
+    margin: 150px 0;
 }
 .introduce .introduce__img img {
     width: 100%;
@@ -823,7 +819,125 @@ header .wave span:nth-of-type(4) {
     
 }
 
+/* TEAM */
+.team {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.team h2 {
+    color: #343434;
+}
 
+.team .team__content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin: 50px 0 70px;
+}
+
+
+
+.team .team__content .team__top {
+    position: relative;
+    cursor: pointer;
+}
+
+.team .team__item img{
+    width: 100%;
+}
+
+.team .team__item .item_info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.team .item_info .item__social {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+}
+
+.team .team__item .team_name {
+    margin-top: 30px;
+}
+
+.team .team__item .team_name p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #090909;
+    opacity: 0.4;
+}
+
+.team div {
+    text-align: center;
+}
+
+.team div button {
+    position: relative;
+    background-color: #027ab600;
+    border: none;
+}
+
+.team div button a{
+    text-decoration: none;
+    color: #535353;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.team .item_info .item__social i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.team .item_info .item__social i:nth-of-type(1){
+    background-color: #3c5997;
+}
+.team .item_info .item__social i:nth-of-type(2){
+    background-color: #05aced;
+}
+.team .item_info .item__social i:nth-of-type(3){
+    background-color: #027bb6;
+}
+
+.team .team__item:hover .item_info{
+    opacity: 1;
+    visibility: visible;
+}
+
+.team .team__item:hover .team__top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #eff6f9;
+}
+
+.team .team__item:hover img {
+    opacity: 0.2;
+}
 
 
 
